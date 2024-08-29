@@ -1,0 +1,326 @@
+#header{
+    
+    background-image: linear-gradient(180deg,hsla(36,93%,68%,.28),hsla(40,4%,74%,.28));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 12px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+  .header-logo{
+    display: flex;
+    align-items: center;
+    height: 40px; 
+    margin-right: 10px;
+  }
+  .nav-links{
+    display: flex;
+    list-style: none;
+    margin: 15px;
+    padding: 10px;
+  }
+  .nav-link{
+    margin-left: 50px;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+  }
+  @media (max-width: 600px) {
+      .header {
+          flex-direction: column;
+          align-items: flex-start;
+      }
+  }
+
+  body{
+    background-color: rgb(250 249 237);
+  }
+
+  #email-section{
+    text-align: center;
+    margin-top: 80px;
+    font-family: "Cabin", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 2.05rem;
+  }
+  
+  #bold-text{
+    color: rgb(252 119 42);
+    font-size: 3.95rem;
+  }
+  
+  #email{
+    border: 2px solid rgb(252 119 42); 
+    border-radius: 10px; 
+    padding: 10px 15px; 
+    outline: none; 
+    font-size: 16px; 
+    transition: border-color 0.3s ease;
+    width: 289px;
+
+  }
+
+  #submit{
+    background-color: hsl(21 100% 50%);
+    color: white; /* White text color */
+    padding: 12px 24px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Make the text bold */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+  }
+
+  #submit:hover{
+    background-color: hsl(21deg 100% 50% / 90%);
+  }
+
+  #features{
+    text-align: left;
+    align-items: left;
+    margin: auto;
+    margin-top: 50px;
+    padding: 12px 12px 12px 25px;
+    border-radius: 0;
+    background-color: rgb(255 168 47);
+    width: auto;
+
+  }
+
+.feature{
+    
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    align-items: center; 
+}
+
+#logo{
+    margin-right: 30px;
+}
+
+.feature-text{
+    font-family: "Roboto", sans-serif;
+}
+
+.feature-text h3{
+    font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#works-title{
+    text-align: center;
+    margin-top: 40px;
+    font-family: "Cabin", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.75rem;
+}
+
+#works-img{
+    width: 70%;
+}
+
+#bold-text2{
+    color: rgb(252 119 42);
+    font-size: 2.95rem;
+}
+
+.benefits-title{
+    text-align: center;
+    margin-top: 40px;
+    font-family:  "Cabin", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.75rem;
+}
+
+/* From Uiverse.io by gharsh11032000 */ 
+
+
+
+.card-title {
+  color: #262626;
+  font-size: 1.5em;
+  line-height: normal;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.small-desc {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #452c2c;
+}
+
+.small-desc {
+  font-size: 1em;
+}
+
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background: linear-gradient(135deg, hsl(21deg 100% 50% / 90%), hsl(21deg 100% 50% / 90%));
+  border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: white;
+  font-family: courier, sans;
+}
+
+.card {
+  display: block;
+  position: relative;
+  max-width: 300px;
+  max-height: 320px;
+  background-color: rgb(255 168 47);
+  border-radius: 10px;
+  padding: 2em 1.2em;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, rgb(255 168 47), rgb(244 146 52 / 60%));
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: linear-gradient(135deg, hsl(21deg 100% 50% / 90%), hsl(21deg 100% 50% / 90%));
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.35s ease-out;
+}
+
+.card:hover:before {
+  transform: scale(28);
+}
+
+.card:hover .small-desc {
+  transition: all 0.5s ease-out;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.card:hover .card-title {
+  transition: all 0.5s ease-out;
+  color: #ffffff;
+}
+
+.go-corner:hover{
+    transition: all 0.5s ease-out;
+    color: rgb(255 168 47);
+}
+
+.container{
+    display: flex;
+    justify-content: center; 
+    
+}
+
+.footer{
+  background-color: white;
+}
+
+.footerContainer{
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcons a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socialIcons a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+
+.socialIcons a i:hover{
+  font-size: 2.2em;
+  transition: 0.4s;
+}
+
+.footerNav{
+  margin: 30px 0;
+}
+
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+}
+
+.footerNav ul li a{
+  color: black;
+  margin: 25px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+  text-decoration: underline;
+}
+
+.footerBottom{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  
+}
+
+@media (max-width: 700px){
+  .footerNav ul{
+    flex-direction: column;
+  }
+
+  .footerNav ul li{
+    width: 100px;
+    text-align: center;
+    margin: 10px;
+  }
+}
